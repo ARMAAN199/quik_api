@@ -1,6 +1,6 @@
 const express = require("express");
 // const mongoose = require("mongoose");
-// const mainroutes = require("./routes/mainroutes");
+const mainroutes = require("./routes/mainroutes");
 // const profileroutes = require("./routes/profileroutes");
 const cors = require("cors");
 // const dotenv = require("dotenv");
@@ -36,7 +36,7 @@ app.use(
 
 // app.use(passport.initialize());
 // app.use(passport.session());
-// app.use(mainroutes);
+app.use(mainroutes);
 // app.use(profileroutes);
 
 // ${process.env.START_MONGODB}${process.env.MONGODB_USERNAME}:${process.env.MONGODB_PASSWORD}${process.env.END_MONGODB}
